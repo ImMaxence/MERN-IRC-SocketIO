@@ -1,0 +1,86 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.circles {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circles div {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circles .circle1 {
+    height: 60px;
+    width: 60px;
+    background-color: $dark_blue;
+    left: 5%;
+    top: 10%;
+    opacity: 0.4;
+    animation: zoomInOut 6s ease-in-out infinite;
+}
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.circles .circle2 {
+    height: 80px;
+    width: 80px;
+    background-color: $dark_blue;
+    left: 30%;
+    top: 50%;
+    opacity: 0.4;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+.circles .circle3 {
+    height: 120px;
+    width: 120px;
+    background-color: $dark_blue;
+    top: 40%;
+    opacity: 0.6;
+    right: -60px;
+}
+
+.circles .circle4 {
+    height: 50px;
+    width: 50px;
+    background-color: $dark_blue;
+    top: 80%;
+    left: -30px;
+    opacity: 0.6;
+}

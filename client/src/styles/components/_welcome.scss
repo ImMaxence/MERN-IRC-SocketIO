@@ -1,0 +1,31 @@
+.wel_msg {
+    width: 100%;
+    padding: 10px;
+}
+
+.msg_wel {
+    width: 100%;
+    color: $dark_blue;
+    font-family: $bold;
+    background-color: #9AFF61;
+    border: 1px solid aliceblue;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.leave {
+    width: 100%;
+    padding: 10px;
+}
+
+.msg_leave {
+    width: 100%;
+    color: $dark_blue;
+    font-family: $bold;
+    background-color: #FF7D61;
+    border: 1px aliceblue solid;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+}

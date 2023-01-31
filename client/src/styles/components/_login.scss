@@ -1,0 +1,102 @@
+.login_page {
+    background-color: $violet_blue;
+    opacity: 0.8;
+    width: 40%;
+    border-radius: 8px;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid $light_violet_blue;
+    position: relative;
+    z-index: 100;
+}
+
+.title_login {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+}
+
+.title_login h1 {
+    color: $dark_blue;
+    font-family: $bold;
+}
+
+.login_in_but {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+.login_in_but input {
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-family: $extra_light;
+    font-weight: bold;
+    width: 70%;
+}
+
+.login_in_but input:focus {
+    outline: none;
+}
+
+.login_in_but input:hover {
+    cursor: pointer;
+}
+
+.login_in_but button {
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    font-family: $bold;
+    transition: 0.2s;
+    margin-left: 2%;
+    font-size: 18px;
+}
+
+.login_in_but button:hover {
+    cursor: pointer;
+}
+
+.login_in_but button:active {
+    transform: scale(0.8);
+}
+
+@media(max-width: 600px) {
+    .title_login h1 {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 485px) {
+    .login_in_but input {
+        width: 100%;
+    }
+
+    .login_in_but button {
+        margin-left: 0;
+        margin-top: 5%;
+        font-size: 10px;
+        padding: 5%;
+    }
+
+    .title_login h1 {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 230px) {
+    .title_login h1 {
+        font-size: 10px;
+    }
+
+    .login_in_but input {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,143 @@
+.error_page {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.title_error {
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
+    animation: move 18s ease-in-out infinite;
+    background-image: linear-gradient(68.7deg, $dark_blue 13.2%, $light_blue 29.8%, $light_violet_blue 48.9%, $light_blue 68.2%, $dark_blue 86.4%);
+}
+
+.align_cat {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        background-position: 200% 0%;
+    }
+
+    50% {
+        background-position: 0% 200%;
+    }
+}
+
+.title_error h1 {
+    font-family: $bold;
+}
+
+.error_page p {
+    font-family: $semi_bold;
+    color: $dark_blue;
+    text-align: center;
+}
+
+@media(max-width: 425px) {
+    .title_error h1 {
+        font-size: 20px;
+    }
+
+    .error_page p {
+        font-size: 15px;
+        padding-top: 5%;
+    }
+}
+
+
+
+.error_msg_container {
+    width: 40%;
+    height: 10vh;
+    z-index: 100000;
+    position: sticky;
+    bottom: 15%;
+    color: aliceblue;
+    font-family: $regular;
+    font-size: 12px;
+    background-color: $dark_blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid aliceblue;
+    padding-top: 0.5%;
+    transform: translateX(-100%);
+    overflow-y: scroll;
+}
+
+.error_msg_container::-webkit-scrollbar {
+    display: none;
+}
+
+.no_animate {
+    animation: none;
+}
+
+.animate {
+    animation: to_anim 5s ease;
+}
+
+@keyframes to_anim {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(5%);
+    }
+
+    30% {
+        transform: translateX(5%);
+    }
+
+    40% {
+        transform: translateX(5%);
+    }
+
+    50% {
+        transform: translateX(5%);
+    }
+
+    60% {
+        transform: translateX(5%);
+    }
+
+    70% {
+        transform: translateX(5%);
+    }
+
+    80% {
+        transform: translateX(5%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.real_mssg {
+    width: 95%;
+    height: inherit;
+}
+
+.align_error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+}

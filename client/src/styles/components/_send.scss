@@ -1,0 +1,53 @@
+.container_send {
+    top: calc(100% - 55px);
+    height: 55px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, #8B66FF, #C3C9FF);
+    border-top: 1px solid aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.container_send input {
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: $extra_light;
+    font-weight: bold;
+    caret-color: gray;
+    background-color: aliceblue;
+}
+
+.container_send input:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.container_send button {
+    border: none;
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: $bold;
+    text-align: center;
+    transition: all 0.2s;
+    color: $dark_blue;
+}
+
+.container_send button:hover {
+    cursor: pointer;
+}
+
+.container_send button:active {
+    transform: scale(0.8);
+}
